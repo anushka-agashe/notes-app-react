@@ -4,6 +4,7 @@ import NotesList from "../../Components/NotesList/NotesList";
 import NoteEditor from "../../Components/NoteEditor/NoteEditor";
 import { useNavigate, useParams } from "react-router-dom";
 import { AppContextData } from "../../Context/AppContext";
+import "../NotesPage/NotesPage.css";
 
 const NotesPage = () => {
   const { id } = useParams();
