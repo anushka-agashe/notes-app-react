@@ -30,7 +30,7 @@ h3 {
   font-size: 29px;
   font-weight: 500;
   color: black;
-  line-height: 46px;
+  /* line-height: 46px; */
 }
 
 .groupModal {
@@ -40,7 +40,7 @@ h3 {
 }
 
 .group-name label {
-  font-size: 27.31px;
+  font-size: 25px;
   font-weight: 500;
   letter-spacing: 0.035em;
   color: black;
@@ -70,7 +70,7 @@ h3 {
 }
 
 .color-container h4 {
-  font-size: 27.31px;
+  font-size: 25px;
   font-weight: 500;
   letter-spacing: 0.035em;
 }

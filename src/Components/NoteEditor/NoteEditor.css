@@ -24,7 +24,7 @@
   width: 100%;
   font-size: 25px;
   border: none;
-  line-height: 35px;
+  /* line-height: 35px; */
   font-weight: 400;
   padding: 10px;
   background: transparent;
@@ -59,7 +59,7 @@ input:focus {
 .innerNoteEditor input {
  
   font-size: 17px;
-  line-height: 20px;
+  /* line-height: 20px; */
   padding: 5px;
 }
 
