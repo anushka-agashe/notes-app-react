@@ -21,6 +21,7 @@
 
 .innerNoteEditor input {
   flex: 1;
+  width: 100%;
   font-size: 30px;
   border: none;
   line-height: 35px;
