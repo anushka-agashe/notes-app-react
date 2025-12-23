@@ -1,7 +1,6 @@
 .groupItems {
   position: relative;
-  width: 90%;
-  max-width: 400px;
+  width: 400px;
   height: 100vh;
   display: flex;
   flex-direction: column;
