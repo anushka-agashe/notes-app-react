@@ -1,0 +1,27 @@
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.rightPanel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #dae5f5;
+}
+
+@media (max-width : 360px) {
+  .container{
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .rightPanel {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    overflow: hidden;
+  }
+}

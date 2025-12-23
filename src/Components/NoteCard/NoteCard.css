@@ -1,0 +1,47 @@
+
+.noteCard {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 60px); 
+  margin: 10px auto; 
+  margin-top: 20px;
+  font-size: 18px;
+  gap: 30px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px #cccccc;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+.noteFooter {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  position: relative;
+  justify-content: flex-end;
+}
+
+
+@media (max-width : 360px){
+  
+.noteCard {
+  width: calc(100% - 60px); 
+  margin: 10px auto; 
+  margin-top: 20px;
+  font-size: 13px;
+  gap: 20px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px #cccccc;
+}
+
+.noteFooter {
+  gap: 5px;
+  font-size: 13px;
+  
+}
+
+}

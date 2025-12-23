@@ -1,0 +1,8 @@
+.notesPage {
+  height: 100vh;
+  width: 100vw;
+  background-color: #dae5f5;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
