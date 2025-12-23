@@ -1,7 +1,7 @@
 .noteEditor {
   position: sticky;
   width: 100%;
-  height: 255px;
+  height: 240px;
   background-color: #001f8b;
   padding: 20px 28px;
   box-sizing: border-box;
@@ -22,7 +22,7 @@
 .innerNoteEditor input {
   flex: 1;
   width: 100%;
-  font-size: 30px;
+  font-size: 25px;
   border: none;
   line-height: 35px;
   font-weight: 400;
@@ -35,8 +35,8 @@ input:focus {
 }
 
 .innerNoteEditor #Btn {
-  width: 35px;
-  height: 30px;
+  width: 30px;
+  height: 25px;
   position: absolute;
   top: 80%;
   right: 25px;

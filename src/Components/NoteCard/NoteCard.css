@@ -5,7 +5,7 @@
   width: calc(100% - 60px); 
   margin: 10px auto; 
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 15px;
   gap: 30px;
   background-color: white;
   padding: 20px;
@@ -18,7 +18,7 @@
 .noteFooter {
   display: flex;
   gap: 10px;
-  font-size: 18px;
+  font-size: 15px;
   position: relative;
   justify-content: flex-end;
 }

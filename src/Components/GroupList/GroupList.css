@@ -16,7 +16,7 @@
 }
 
 .groupItems h3 {
-  font-size: 35px;
+  font-size: 30px;
   align-self: center;
   padding-bottom: 40px;
    padding-top: 40px;
@@ -52,8 +52,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 68px;
-  height: 68px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   color: #ffffff;
   font-size: 25px;
@@ -63,12 +63,12 @@
   display: flex;
   align-items: center;
   text-align: left;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 #img1 {
-  width: 93px;
-  height: 93px;
+  width: 90px;
+  height: 90px;
   position: absolute;
   left: 275px;
   bottom: 40px;
