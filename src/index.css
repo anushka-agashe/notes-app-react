@@ -16,3 +16,10 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  transform: scale(0.9);
+  transform-origin: top left;
+  width: 111.11%;
+  height: 111.11%;
+}
+
