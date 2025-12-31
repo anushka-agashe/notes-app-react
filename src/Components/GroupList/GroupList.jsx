@@ -26,6 +26,7 @@ const GroupList = () => {
     <>
       <div className="groupItems">
         <h3>Pocket Notes</h3>
+
         {groups.map((item) => {
           return (
             <div
@@ -45,6 +46,7 @@ const GroupList = () => {
             </div>
           );
         })}
+
         <img id="img1" src={createGrp} alt="" onClick={handleCreateModal} />
         {isCreateModalOpen && (
           <CreateGroupModal onClose={() => setIsCreateModalOpen(false)} />
