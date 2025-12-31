@@ -24,6 +24,7 @@ const GroupList = () => {
 
   return (
     <>
+    <div className="groupSidebar">
       <div className="groupItems">
         <h3>Pocket Notes</h3>
 
@@ -51,6 +52,7 @@ const GroupList = () => {
         {isCreateModalOpen && (
           <CreateGroupModal onClose={() => setIsCreateModalOpen(false)} />
         )}
+      </div>
       </div>
     </>
   );

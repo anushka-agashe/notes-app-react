@@ -1,11 +1,16 @@
-.groupItems {
+.groupSidebar {
+  position: relative;
   width: clamp(260px, 30vw, 380px);
   height: 100vh;
+}
+
+.groupItems {
+  height: 100%;
+  overflow-y: auto;
+  padding-bottom: 120px;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  overflow-y: auto;
-  position: relative;
 }
 
 .groupItems h3 {
@@ -44,17 +49,21 @@
 }
 
 #img1 {
-  position: sticky;
-  margin-left: auto;
-  padding-right: 16px;
-  padding-bottom: 16px;
+  position: absolute;
   bottom: 16px;
   right: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
   width: clamp(70px, 10vw, 90px);
   height: clamp(70px, 10vw, 90px);
+  z-index: 10;
 }
 
 @media (max-width: 360px) {
+  .groupSidebar {
+    width: 100vw;
+  }
+
   .groupItems {
     width: 100%;
   }
@@ -74,6 +83,9 @@
   }
 }
 @media (max-width: 480px) {
+  .groupSidebar {
+    width: 100vw;
+  }
   .groupItems {
     width: 100%;
   }
@@ -93,6 +105,9 @@
   }
 }
 @media (max-width: 768px) {
+  .groupSidebar {
+    width: 100vw;
+  }
   .groupItems {
     width: 100%;
   }
