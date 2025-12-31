@@ -1,111 +1,112 @@
 .groupItems {
-  position: relative;
-  width: 400px;
+  width: clamp(260px, 30vw, 380px);
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-bottom: 160px;
-  gap: 20px;
+  gap: 16px;
   overflow-y: auto;
-}
-
-.groupItems::-webkit-scrollbar {
-  display: none;
+  position: relative;
 }
 
 .groupItems h3 {
-  font-size: 30px;
-  align-self: center;
-  padding-bottom: 40px;
-   padding-top: 40px;
-
+  font-size: clamp(20px, 3vw, 30px);
+  text-align: center;
+  margin: 24px 0;
 }
 
 .item {
   display: flex;
-  flex-direction: row;
-  gap: 20px;
   align-items: center;
+  gap: 16px;
+  padding: 12px 20px;
   cursor: pointer;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 10px;
-  padding-top: 10px;
 }
 
-.item.active {
-  background-color: rgb(47, 47, 47, 0.17);
-  border-radius: 16px;
-  width: 100%;
-}
-
+.item.active,
 .item:hover {
-  transform: scale(1.05);
-  width: 100%;
-  background-color: rgb(47, 47, 47, 0.17);
+  background: rgba(47, 47, 47, 0.17);
   border-radius: 16px;
 }
 
 .icon {
+  width: clamp(44px, 6vw, 60px);
+  height: clamp(44px, 6vw, 60px);
+  font-size: clamp(16px, 3vw, 24px);
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  color: #ffffff;
-  font-size: 25px;
+  color: #fff;
 }
 
 .groupName {
-  display: flex;
-  align-items: center;
-  text-align: left;
-  font-size: 20px;
+  font-size: clamp(16px, 2vw, 20px);
 }
 
 #img1 {
-  width: 90px;
-  height: 90px;
-  position: absolute;
-  left: 275px;
-  bottom: 40px;
+  position: sticky;
+  margin-left: auto;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  bottom: 16px;
+  width: clamp(70px, 10vw, 90px);
+  height: clamp(70px, 10vw, 90px);
 }
 
 @media (max-width: 360px) {
   .groupItems {
-    width: 100vw;
-    height: 100vh;
-    padding: 16px 12px;
-    margin-bottom: 0;
+    width: 100%;
   }
-
   .groupItems h3 {
-    font-size: 31px;
-    padding-bottom: 16px;
+    font-size: clamp(18px, 5vw, 22px);
+    margin: 16px 0;
   }
 
-  .item {
-    gap: 14px;
+  .groupName {
+    font-size: clamp(14px, 4vw, 16px);
   }
 
   .icon {
-    width: 62px;
-    height: 62px;
+    width: 44px;
+    height: 44px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .groupItems {
+    width: 100%;
+  }
+
+  .groupItems h3 {
+    font-size: clamp(20px, 4.5vw, 24px);
+  }
+
+  .groupName {
+    font-size: clamp(15px, 3.5vw, 17px);
+  }
+
+  .icon {
+    width: 48px;
+    height: 48px;
     font-size: 18px;
   }
-
-   .groupName {
-    font-size: 19px;
+}
+@media (max-width: 768px) {
+  .groupItems {
+    width: 100%;
   }
 
-    #img1 {
-    position: fixed;
-    bottom: 16px;
-    right: 16px;
-    width: 75px;
-    height: 75px;
+  .groupItems h3 {
+    font-size: clamp(22px, 4vw, 26px);
+  }
+
+  .groupName {
+    font-size: clamp(16px, 3vw, 18px);
+  }
+
+  .icon {
+    width: 52px;
+    height: 52px;
+    font-size: 20px;
   }
 }

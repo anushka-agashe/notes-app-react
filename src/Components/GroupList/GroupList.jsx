@@ -8,7 +8,7 @@ import { useMediaQuery } from "react-responsive";
 
 const GroupList = () => {
   const navigate = useNavigate();
-  const isMobileView = useMediaQuery({ maxWidth: 360 });
+  const isMobileView = useMediaQuery({ maxWidth: 768 });
   const [isCreateModalOpen, setIsCreateModalOpen] = useState(false);
   const { groups, selectGroup, currentGroupId } = useContext(AppContextData);
   const handleCreateModal = () => {
@@ -45,11 +45,11 @@ const GroupList = () => {
             </div>
           );
         })}
+        <img id="img1" src={createGrp} alt="" onClick={handleCreateModal} />
+        {isCreateModalOpen && (
+          <CreateGroupModal onClose={() => setIsCreateModalOpen(false)} />
+        )}
       </div>
-      <img id="img1" src={createGrp} alt="" onClick={handleCreateModal} />
-      {isCreateModalOpen && (
-        <CreateGroupModal onClose={() => setIsCreateModalOpen(false)} />
-      )}
     </>
   );
 };

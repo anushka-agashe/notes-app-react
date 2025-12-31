@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { AppContextData } from "../../Context/AppContext";
 import NoteCard from "../NoteCard/NoteCard";
-import "../NotesList/NotesList.css"
+import "../NotesList/NotesList.css";
 const NotesList = () => {
   const { currentGroupId, notes } = useContext(AppContextData);
 

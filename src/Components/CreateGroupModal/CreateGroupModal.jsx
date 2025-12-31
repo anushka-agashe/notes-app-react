@@ -36,7 +36,6 @@ const CreateGroupModal = ({ onClose }) => {
       return;
     }
 
-
     console.log(groupName, selectedColor);
 
     addGroup(groupName, selectedColor);
@@ -57,7 +56,7 @@ const CreateGroupModal = ({ onClose }) => {
   return (
     <div className="new-group-overlay">
       <div className="new-group" ref={modalRef}>
-        <h3>Create New group</h3>
+        <h3 id="h3">Create New group</h3>
         <div className="groupModal">
           <div className="group-name">
             <label htmlFor="">Group Name</label>
@@ -69,7 +68,7 @@ const CreateGroupModal = ({ onClose }) => {
             />
           </div>
           <div className="color-container">
-            <h4>Choose Colour</h4>
+            <h4 id="h4">Choose Colour</h4>
             <div className="color-row">
               {colors.map((color, index) => (
                 <div

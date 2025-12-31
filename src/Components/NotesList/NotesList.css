@@ -1,34 +1,6 @@
 .notesList {
   flex: 1;
-  background-color: #dae5f5;
-  width: 100%;
+  background: #dae5f5;
   overflow-y: auto;
-  overflow-x: hidden;
-  padding-right: 0;
-  padding-left: 0;
-   padding-bottom: 260px;
-
-}
-
-/* Scrollbar – Chrome / Edge / Safari */
-.notesList::-webkit-scrollbar {
-  width: 6px;
-}
-
-.notesList::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-}
-
-.notesList::-webkit-scrollbar-track {
-  background: transparent;
-}
-@media (max-width: 360px) {
-  .notesList {
-    height: 100vh;
-    bottom: 0;
-    flex: 1;
-    overflow-y: auto;
-    padding-bottom: 200px;
-  }
+  padding-bottom: 160px;
 }

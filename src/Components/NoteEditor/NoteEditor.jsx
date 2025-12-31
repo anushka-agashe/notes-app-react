@@ -7,8 +7,7 @@ import { AppContextData } from "../../Context/AppContext";
 const NoteEditor = () => {
   const [input, setInput] = useState("");
 
-  const { addNotes, currentGroupId} =
-    useContext(AppContextData);
+  const { addNotes, currentGroupId } = useContext(AppContextData);
 
   const handleChange = (e) => {
     setInput(e.target.value);
@@ -41,7 +40,8 @@ const NoteEditor = () => {
             onChange={handleChange}
             onKeyDown={handleKeyDown}
           />
-          <img id="Btn"
+          <img
+            id="Btn"
             src={hasInput ? BlueVector : GrayVector}
             alt=""
             onClick={handleSave}
@@ -54,5 +54,3 @@ const NoteEditor = () => {
 };
 
 export default NoteEditor;
-
-

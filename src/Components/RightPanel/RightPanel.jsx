@@ -1,7 +1,7 @@
 import React from "react";
 import bgImg from "../../assets/image-removebg-preview 1.png";
 import vector from "../../assets/Vector.png";
-import "../RightPanel/RightPanel.css"
+import "../RightPanel/RightPanel.css";
 
 const RightPanel = () => {
   return (

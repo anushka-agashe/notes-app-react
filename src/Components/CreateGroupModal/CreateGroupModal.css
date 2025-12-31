@@ -1,9 +1,6 @@
 .new-group-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
+  inset: 0;
   background: rgba(0, 0, 0, 0.3);
   display: flex;
   align-items: center;
@@ -12,158 +9,125 @@
 }
 
 .new-group {
-  position: absolute;
-  width: 740px;
-  height: 317px;
+  width: clamp(280px, 90vw, 740px);
+  background: #fff;
   border-radius: 6px;
-  background-color: #ffffff;
-  margin: 100px;
+  padding: 24px;
   display: flex;
-  gap: 25px;
   flex-direction: column;
   justify-items: center;
-  box-shadow: 0px 4px 20px #cccccc;
-  padding: 30px;
+  gap: 24px;
+  box-shadow: 0 4px 20px #ccc;
 }
 
-h3 {
-  font-size: 29px;
+#h3 {
+  font-size: clamp(18px, 3vw, 28px);
+  text-align: left;
   font-weight: 500;
-  color: black;
-  /* line-height: 46px; */
+}
+
+#h4 {
+  font-size: clamp(14px, 2vw, 22px);
+  font-weight: 500;
 }
 
 .groupModal {
   display: flex;
   flex-direction: column;
-  gap: 50px;
-}
-
-.group-name label {
-  font-size: 25px;
-  font-weight: 500;
-  letter-spacing: 0.035em;
-  color: black;
+  gap: 32px;
 }
 
 .group-name {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
   justify-content: left;
-  align-items: flex-start;
-  gap: 20px;
+  align-items: center;
+}
+
+.group-name label {
+  font-size: clamp(14px, 2vw, 22px);
+  font-weight: 500;
+}
+
+.group-name input {
+  flex: 1;
+  min-width: clamp(160px, 40vw, 320px);
+  max-width: 420px;
+  height: clamp(36px, 6vw, 44px);
+
+  border-radius: 22px;
+  font-size: clamp(14px, 2vw, 20px);
+  padding-left: 16px;
+  border: 2px solid #ccc;
 }
 
 .color-container {
   display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-
-.group-name input {
-  width: 435px;
-  height: 51px;
-  border-radius: 22px;
-  font-size: 23px;
-  padding-left: 20px;
-  border: 2px solid #cccccc;
-}
-
-.color-container h4 {
-  font-size: 25px;
-  font-weight: 500;
-  letter-spacing: 0.035em;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .color-row {
   display: flex;
-  flex-direction: row;
-  gap: 15px;
+  gap: 10px;
+  flex-wrap: nowrap;
 }
 
 .color {
+  width: clamp(17px, 5vw, 40px);
+  height: clamp(17px, 5vw, 40px);
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
   cursor: pointer;
 }
 
 #create-btn {
-  background-color: #001f8b;
-  color: #ffffff;
-  font-size: 20px;
-  letter-spacing: 0.035em;
-  border-radius: 11px;
-  padding: 5px;
-  width: 154px;
-  height: 38px;
-  border: none;
   align-self: flex-end;
+  background: #001f8b;
+  color: #fff;
+
+  font-size: clamp(14px, 1.5vw, 18px);
+  padding: clamp(6px, 1.5vw, 10px) clamp(16px, 3vw, 28px);
+
+  border-radius: 10px;
+  border: none;
   cursor: pointer;
-  position: absolute;
-  bottom: 30px;
-  right: 30px;
+
+  width: clamp(100px, 12vw, 160px);
 }
 
-.color:hover {
-  transform: scale(1.05);
-}
-
-@media (max-width: 360px) {
-  .new-group-overlay {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-  }
-
+@media (max-width: 768px) {
   .new-group {
-    width: 284px;
-    height: 311px;
-    padding: 18px;
+    position: relative;
+    padding-bottom: 80px;
   }
 
-  h3 {
-    font-size: 18px;
-  }
-
-  .group-name label {
-    font-size: 14px;
+  .groupModal {
+    gap: 20px;
   }
 
   .group-name {
-    gap: 10px;
-  }
-
-  .color-container {
-    gap: 10px;
+    flex-direction: row;
+    align-items: flex-start;
   }
 
   .group-name input {
-    width: 150px;
-    height: 23px;
-    border-radius: 9px;
-    font-size: 10px;
+    min-width: clamp(80px, 40vw, 350px);
+    max-width: 400px;
   }
 
-  .color-container h4 {
-    font-size: 14px;
-  }
-
+  .color-container,
   .color-row {
-    gap: 5px;
-  }
-
-  .color {
-    width: 17px;
-    height: 17px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
   }
 
   #create-btn {
-    font-size: 17px;
-    border-radius: 6px;
-    padding: 5px;
-    width: 186px;
-    height: 33px;
+    align-self: center;
+    position: absolute;
+    bottom: 20px;
+    width: clamp(120px, 40vw, 180px);
+    font-size: clamp(14px, 3vw, 16px);
+    padding: 8px 20px;
   }
 }

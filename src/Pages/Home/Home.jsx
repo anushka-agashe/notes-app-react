@@ -14,7 +14,7 @@ const Home = () => {
 
   const currentGroup = groups.find((group) => group.id === currentGroupId);
 
-  const isMobileView = useMediaQuery({ maxWidth: 360 });
+  const isMobileView = useMediaQuery({ maxWidth: 768 });
 
   return (
     <div className="container">

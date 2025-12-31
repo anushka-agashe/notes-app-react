@@ -28,12 +28,11 @@ export const AppContext = ({ children }) => {
 
   // Add a new group
   const addGroup = (name, color) => {
-
     const exists = groups.some(
-      group => group.name.trim().toLowerCase() === name.trim().toLowerCase()
+      (group) => group.name.trim().toLowerCase() === name.trim().toLowerCase()
     );
 
-    if(exists){
+    if (exists) {
       alert("Group already exists !!");
       return;
     }
@@ -48,7 +47,6 @@ export const AppContext = ({ children }) => {
       ...prev,
       [id]: [],
     }));
-
   };
 
   // Creating empty notes for new group
@@ -74,7 +72,7 @@ export const AppContext = ({ children }) => {
       time,
     };
 
-    setNotes((prev) => ({ 
+    setNotes((prev) => ({
       ...prev,
       [groupId]: [...(prev[groupId] || []), newNote],
     }));

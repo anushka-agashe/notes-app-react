@@ -1,74 +1,67 @@
 .noteEditor {
   position: sticky;
-  width: 100%;
-  height: 240px;
-  background-color: #001f8b;
-  padding: 20px 28px;
-  box-sizing: border-box;
   bottom: 0;
-  z-index: 10;
+  background: #001f8b;
+  padding: 16px;
+  height: 140px;
 }
 
 .innerNoteEditor {
   width: 100%;
   height: 100%;
   background-color: white;
-  border-radius: 9px; 
-  position: relative; 
+  border-radius: 9px;
+  position: relative;
   padding: 16px 20px;
   box-sizing: border-box;
 }
 
 .innerNoteEditor input {
-  flex: 1;
   width: 100%;
-  font-size: 25px;
+  font-size: clamp(16px, 3vw, 24px);
   border: none;
-  /* line-height: 35px; */
-  font-weight: 400;
-  padding: 10px;
   background: transparent;
 }
 
-input:focus {
+.innerNoteEditor input:focus {
   outline: none;
+  border: none;
+  box-shadow: none;
 }
 
 .innerNoteEditor #Btn {
-  width: 30px;
-  height: 25px;
   position: absolute;
-  top: 80%;
-  right: 25px;
-  transform: translateY(-50%);
-  cursor: pointer;
+  right: 16px;
+  bottom: 16px;
+  width: 26px;
 }
 
-
-@media(max-width:360px){
-  .noteEditor {  
-  height: 130px;
-  padding: 10px 14px;
-  
+@media (min-width: 360px) {
+  .noteEditor {
+    height: 160px;
+  }
 }
 
-.innerNoteEditor {
-    padding: 8px 10px;
+@media (min-width: 480px) {
+  .noteEditor {
+    height: 180px;
+  }
 }
 
-.innerNoteEditor input {
- 
-  font-size: 17px;
-  /* line-height: 20px; */
-  padding: 5px;
+@media (min-width: 768px) {
+  .noteEditor {
+    height: 200px;
+  }
 }
 
-.innerNoteEditor #Btn {
-  width: 21px;
-  height: 17px;
-  position: absolute;
-  top: 70%;
-  right: 30px;
+@media (min-width: 900px) {
+  .noteEditor {
+    height: 220px;
+  }
 }
 
+@media (min-width: 1024px) {
+  .noteEditor {
+    height: 240px;
+  }
 }
